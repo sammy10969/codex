@@ -82,7 +82,8 @@ section{position:relative;z-index:2;}
 .hpbg{position:absolute;inset:-60px;background:radial-gradient(ellipse 60% 55% at 75% 40%,rgba(200,224,202,.35) 0%,transparent 60%),radial-gradient(ellipse 45% 45% at 25% 70%,rgba(242,184,198,.18) 0%,transparent 60%);will-change:transform;}
 .hlayout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1;width:100%;}
 .hbadge{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green);background:var(--green-light);border:1px solid rgba(74,124,78,.35);padding:7px 18px;border-radius:100px;margin-bottom:26px;opacity:0;animation:fup .8s .3s forwards;}
-.htitle{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5.5vw,72px);font-weight:500;line-height:1.1;color:var(--ink);margin-bottom:20px;opacity:0;animation:fup .9s .5s forwards;min-height:2.5em;}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5.5vw,72px);font-weight:500;line-height:1.1;color:var(--ink);margin-bottom:20px;opacity:0;animation:fup .9s .5s forwards;height:2.35em;min-height:2.35em;overflow:hidden;}
+#typeTarget{white-space:pre-line;}
 .htitle em{font-style:italic;color:var(--sakura-deep);}
 .hcur{display:inline-block;width:3px;height:.85em;background:var(--sakura-deep);vertical-align:middle;margin-left:3px;animation:blink .9s infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
@@ -325,6 +326,9 @@ footer{background:#111411;padding:36px 48px;display:flex;align-items:center;just
   .inner{padding:72px 24px;}
   .tours-hint{display:block;}
   footer{flex-direction:column;gap:10px;text-align:center;}
+}
+@media(max-width:520px){
+  .htitle{height:3.45em;min-height:3.45em;}
 }
 </style>
 </head>
